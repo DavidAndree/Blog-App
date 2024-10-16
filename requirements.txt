@@ -12,3 +12,4 @@ pylint-plugin-utils==0.8.2
 sqlparse==0.5.1
 tomlkit==0.13.2
 tzdata==2024.2
+whitenoise==6.7.0

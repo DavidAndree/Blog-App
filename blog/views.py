@@ -36,8 +36,16 @@ class BlogCreateView(CreateView):
         return initial_data
 
 
+class BlogUpdateView(UpdateView):
+    """Blog Post Delete View"""
+
+    model = Post
+    template_name = "post_edit.html"
+    fields = ["title", "body"]
+
+
 class BlogDeleteView(DeleteView):
-    """Blog Delete View"""
+    """Blog  Post Delete View"""
 
     model = Post
     template_name = "post_delete.html"
